@@ -80,22 +80,20 @@ docker rm orionpax-container
 ```
 Additional Notes
 
-    Docker Updates: Ensure your Docker installation is up-to-date to avoid compatibility issues.
-    Installing New Python Packages: If you need to install additional Python packages, add them to requirements.txt and rebuild the Docker image:
+Docker Updates: Ensure your Docker installation is up-to-date to avoid compatibility issues.
+Installing New Python Packages: If you need to install additional Python packages, add them to requirements.txt and rebuild the Docker image:
 
-    ```bash
-
-    docker build -t orionpax-app .
-    ```
+```bash
+docker build -t orionpax-app .
+```
 
 Enjoy using OrionPax!
 Quick Reference Commands
 
-    Build Docker Image:
-
-    ```bash
-    docker build -t orionpax-app .
-    ```
+Build Docker Image:
+```bash
+docker build -t orionpax-app .
+```
 
 Run Container:
 
