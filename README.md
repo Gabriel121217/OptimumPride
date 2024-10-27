@@ -29,9 +29,11 @@ On Windows:
 ```powershell
 .\venv\Scripts\Activate
 ```
-4. Install Required Dependencies:
+4. Install Required Dependencies, Copy Environment Variables:
 ```bash
  pip install -r requirements.txt
+ cp .env.sample .env
+ # Fill up .env with the real values after this step
 ```
 
 ## 2. Building the Docker Image

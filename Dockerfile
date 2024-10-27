@@ -6,6 +6,9 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY . /app
 
+# Copy the .env file into the container
+COPY .env /app/.env
+
 # Install any necessary Python packages specified in requirements.txt
 # Uncomment if you have a requirements.txt file:
 COPY requirements.txt ./
