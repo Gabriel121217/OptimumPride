@@ -17,7 +17,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict(Google_Cloud, scope)
 client = gspread.authorize(creds)
 
 # Open the Google Sheet by name
-sheet = client.open("BadAssATron").sheet1
+sheet = client.open("BadAssATron").worksheet("Petrol Consumption")
 
 # Conversation states
 MILEAGE, PETROL, COST = range(3)
@@ -83,9 +83,47 @@ async def delete_recent_entry(update: Update, context: ContextTypes.DEFAULT_TYPE
     except Exception as e:
         await update.message.reply_text(f"Error deleting entry: {e}", reply_markup=get_reply_markup())
 
-# Maintenance placeholder function
+# Maintenance 
 async def maintenance(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Maintenance reminder feature is coming soon!", reply_markup=get_reply_markup())
+    # Open the Maintenance schedule sheet
+    try:
+        maintenance_sheet = client.open("BadAssATron").worksheet("Maintenance Schedule")
+        # Get all values from the sheet
+        maintenance_data = maintenance_sheet.get_all_values()
+        
+        # Assuming the first row is the header
+        headers = maintenance_data[0]
+        tasks = maintenance_data[1:]
+
+        # Convert tasks to a list of dictionaries for easier handling
+        tasks_list = [
+            {
+                "thing": task[0],
+                "when": task[1],
+                "status": task[2]
+            }
+            for task in tasks
+        ]
+
+        # Sort tasks by urgency (you can define urgency based on your criteria)
+        # Example: if urgency is indicated in the "when" column, assuming it's a date or a priority
+        sorted_tasks = sorted(tasks_list, key=lambda x: x['when'])
+
+        # Get the next 5 tasks
+        next_tasks = sorted_tasks[:5]
+
+        # Prepare the response message
+        if next_tasks:
+            response_message = "Next 5 maintenance tasks:\n"
+            for i, task in enumerate(next_tasks, start=1):
+                response_message += f"{i}. {task['thing']} (Due: {task['when']}, Status: {task['status']})\n"
+        else:
+            response_message = "No maintenance tasks found."
+
+        await update.message.reply_text(response_message, reply_markup=get_reply_markup())
+    
+    except Exception as e:
+        await update.message.reply_text(f"Error retrieving maintenance tasks: {e}", reply_markup=get_reply_markup())
 
 # End the conversation
 async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
