@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "cybertron-439513",
+  "private_key_id": "ee89572f28d9506042b931bba8cfaae3d3db152b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQDUIjLXnDQTxJxT\nuLWHZz5auEHc68tmiRurcqE5MQd+ckHDYOgGN/DQPJfxb3JSox+eITqDxOHh7Sg+\nsibmPy4aHfzDAZfUFNcixE1lO6D5WKs6RZTpaJIuh8IPl+kxnY/mHCgaiH+UW5LJ\ntSinbsgTzsWNxL4QHRKFFo9a34vaWK0qBAi4ThCwb/GLdkUBIvdVnDZ2vAGT83GN\n9KvXQX3oqIP2o6iXNeqSq8IeA/0PXpRPjGZtcbNQZ4N4xg5BMwQUXcPLiDYPwqCQ\nTkdqVxg2P9wTKxrqLWLkZ+o39UfKXjJK6+TrNYDNAXr+fwQ9RByJ6Jki+GeDvpXT\n55hUVdKlAgMBAAECgf8rHCqnH7UyjNhxoO81fZY5t/dQOoPNyhg2SglkdNJPryr4\nzGm78Q86kGaby1wOGvxlcgGdtfq76rpjiuuUR9R8SwoDl0NPprypvzeJr64x1nMG\nKhDYcX13sigRyl7j5fJyHh+6QJDRxc56BFJktbsmtiIXYdYwkwiyLmPaYjzFjuij\nG0YUFYScumNoXBj7CJLHaShR6LEPLXZD8RcGRX//FP9x1dOLpWpRTUhIJv7czR5g\nBUDvZVrN/+oC2+0bwUJCT2tdhXU2e36/dsyrHD/QbX9KYBisCDOV+gZkZqgsw05K\nqzYM92EHWv1Ba/nwgoHYuxiWxR/UtlEYsIvwT5kCgYEA8CopLbSMLh6crZEDCrGa\nN+aLBGTSk+PjLl4gUziGVS1PFUtZejHaAUzo2cxA/EwXElCx8eo0p5OsP0CrpZu3\nxaAnxq40Hb6TnkWP8KWR7RqK050NCHFjvrFBOLDH9wAuvg36jhG2DIGZFXl2Cvka\nbvSNR7/06Vq3nQyMcOB472kCgYEA4h7joQKWvGp49e9PJUTbaqwvxpS7jXXDoy1X\nxzfmtoBRmXE9mTfLPYROYO5SNK3i3WdWiSZ6B35p2p1h7bXl5vbmhKXrPjHjTP60\n9jJUmGl7QU3VQLPFBVROAcdxufliqDIYQ2IPuTVUAcHtta81rs2bx4O1rfML460V\nRWyGXd0CgYAbxwSUQLml6+x7NrZ/WiNYK9YQYAjrCgSQrFpYxcTjvSXUdK6Yr4Nj\nex3DcxhhFfvlJmgubsRATZgyiKxRrz0GIov3MtbcSdqRB8KqNrw2DEfaSePkAhlj\nSOUeRXQbYW4GlV9RZ0MDF0o5bZ71jfI8uxRMJCuTgeaSx4zG0W+rYQKBgAGg51LJ\nifxhZ+2dg5xpGotyIgX0HEWwi3Apa3Br3qWB1xSb1C2+USBoS4g3LzBh8DhX/i+O\nr2JObsS8TXBA1x8KuC5MY51XDqQHUZZUVneiiti1jsugf9LCAK3SmecU/LjpY3NY\nyXQ0Bh7dHrEoSeKwaGbPdAeEsJk7LeQKHA2hAoGBAO28jUItGWtgVzuxIP0lTOns\nIaP4yOnsMU56Ubh0dRCXRSqGBS8rqjuhHrTkEj9DAP/MpXailW6ptJssMIsG7o37\nAji00a2QcyPwlcFOctPbtepfqOlbGuAqhhi2F+16dKsX3I5pw20ne0eWrUX1FxTM\n8uOevnwIvF33QUMizSqS\n-----END PRIVATE KEY-----\n",
+  "client_email": "orionpax@cybertron-439513.iam.gserviceaccount.com",
+  "client_id": "100745978705770664960",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/orionpax%40cybertron-439513.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
