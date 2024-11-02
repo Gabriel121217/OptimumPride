@@ -65,7 +65,7 @@ async def get_cost(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     try:
         # Append data to Google Sheets
-        sheet.append_row([formatted_date, mileage, petrol, cost,km_per_liter])
+        sheet.append_row([formatted_date, mileage, petrol, cost])
         await update.message.reply_text(f"Thank you! Your data has been uploaded successfully!\n{formatted_date}\nMileage: {mileage} km\nPetrol: {petrol} L\nCost: ${cost}", reply_markup=get_reply_markup())
     except Exception as e:
         await update.message.reply_text(f"Error logging data: {e}", reply_markup=get_reply_markup())
