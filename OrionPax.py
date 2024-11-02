@@ -1,3 +1,4 @@
+#!/home/gabrielwong2/tele_bot/OptimumPride/bot_env/bin/python
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
