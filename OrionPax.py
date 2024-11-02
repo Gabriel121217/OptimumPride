@@ -61,7 +61,7 @@ async def get_cost(update: Update, context: ContextTypes.DEFAULT_TYPE):
     mileage = context.user_data['mileage']
     petrol = context.user_data['petrol']
     cost = context.user_data['cost']
-    km_per_liter = mileage/petrol
+
 
     try:
         # Append data to Google Sheets
