@@ -35,7 +35,7 @@ def get_reply_markup():
 # Start the conversation
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Welcome! Use the buttons below to log your mileage, petrol volume, cost, or to set a maintenance reminder.",
+        "Hello! \nI am here to help you monitor car related matters!\n Happy driving!",
         reply_markup=get_reply_markup()
     )
 
